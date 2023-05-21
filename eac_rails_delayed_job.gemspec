@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Put here the authors']
   s.summary     = 'Put here de description.'
 
-  s.files = Dir['{lib}/**/*']
+  s.files = Dir['{db,lib}/**/*']
 
   s.add_dependency 'delayed_job_active_record', '~> 4.1', '>= 4.1.7'
   s.add_dependency 'eac_rails_utils', '~> 0.17', '>= 0.17.1'
