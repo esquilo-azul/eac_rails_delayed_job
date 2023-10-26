@@ -1,25 +1,14 @@
-require:
-  - rubocop-rails
-  - rubocop-rspec
-
-Layout/LineLength:
-  Max: 100
-
+---
+inherit_gem:
+  eac_rails_gem_support: ".rubocop.yml"
+Gemspec/RequiredRubyVersion:
+  Exclude:
+  - eac_rails_delayed_job.gemspec
 Metrics/MethodLength:
   Exclude:
-    - db/migrate/*.rb
-
-Style/AsciiComments:
-  Enabled: false
-
-Style/Documentation:
-  Enabled: false
-
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
+  - db/migrate/20210720024221_create_delayed_jobs.rb
+Style/RedundantConstantBase:
+  Exclude:
+  - Gemfile
+  - spec/rubocop_spec.rb
+  - spec/spec_helper.rb

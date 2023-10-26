@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'eac_rails_utils', '~> 0.22', '>= 0.22.2'
   s.add_dependency 'eac_ruby_utils', '~> 0.119', '>= 0.119.2'
 
-  s.add_development_dependency 'eac_rails_gem_support', '~> 0.4', '>= 0.4.1'
+  s.add_development_dependency 'eac_rails_gem_support', '~> 0.9'
 end
