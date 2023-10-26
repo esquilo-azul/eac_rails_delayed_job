@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class CreateDelayedJobs < ActiveRecord::Migration[5.1]
-  def self.up
+  def self.up # rubocop:disable Metrics/MethodLength
     create_table :delayed_jobs do |table|
       table.integer :priority, default: 0, null: false
       table.integer :attempts, default: 0, null: false

@@ -1,9 +1,6 @@
 ---
 inherit_gem:
   eac_rails_gem_support: ".rubocop.yml"
-Metrics/MethodLength:
-  Exclude:
-  - db/migrate/20210720024221_create_delayed_jobs.rb
 Style/RedundantConstantBase:
   Exclude:
   - Gemfile
