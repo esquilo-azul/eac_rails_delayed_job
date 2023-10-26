@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      delayed/backend/active_record/job:
+        one: Job
+        other: Jobs
+  eac_rails_utils:
+    menus:
+      root:
+        admin:
+          eac_rails_delayed_job:
+            __self: Delayed Job
