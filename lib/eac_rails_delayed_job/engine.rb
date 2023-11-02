@@ -7,5 +7,6 @@ require 'eac_rails_utils/engine_helper'
 module EacRailsDelayedJob
   class Engine < ::Rails::Engine
     include ::EacRailsUtils::EngineHelper
+    isolate_namespace ::EacRailsDelayedJob
   end
 end
